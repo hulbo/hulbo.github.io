@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="LifeMemoryLog - 당신의 일상, 자산, 그리고 여행을 기록하는 가장 아름다운 방법">
+    <title>LifeMemoryLog | 당신의 모든 순간을 담다</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <i data-feather="hexagon" class="logo-icon"></i>
+            <span>LifeMemoryLog</span>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#features">Features</a></li>
+            <li><a href="#updates">Updates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="menu-btn"><i data-feather="menu"></i></button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#updates">Updates</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <img src="assets/hero_bg.png" alt="LifeMemoryLog Hero Space">
+            <div class="gradient-overlay"></div>
+        </div>
+        <div class="hero-content">
+            <span class="badge">Next Generation Logging App</span>
+            <h1>기록의 <span>품격</span>을 완성하다</h1>
+            <p>일상의 사소한 기억부터 치밀한 자산 관리, 그리고 특별한 여행의 발자취까지.<br>당신의 모든 순간을 프리미엄하게 저장하세요.</p>
+            <div class="cta-group">
+                <a href="#features" class="btn primary-btn">기능 살펴보기 <i data-feather="arrow-right"></i></a>
+                <a href="#updates" class="btn secondary-btn">최신 업데이트 이력</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="section-header">
+            <h2>핵심 기능</h2>
+            <p>흩어진 당신의 데이터가 하나의 유려한 인터페이스로 통합됩니다.</p>
+        </div>
+        <div class="feature-grid">
+            <!-- Feature 1 -->
+            <div class="feature-card reveal">
+                <div class="icon-wrapper">
+                    <i data-feather="book-open"></i>
+                </div>
+                <h3>Life Logs</h3>
+                <p>강력한 사진 압축 엔진과 타임라인 기반의 다크모드 텍스트 에디터로 가장 편안하게 일기를 쓰세요.</p>
+            </div>
+            <!-- Feature 2 -->
+            <div class="feature-card reveal">
+                <div class="icon-wrapper">
+                    <i data-feather="credit-card"></i>
+                </div>
+                <h3>Wealth Management</h3>
+                <p>은행, 카드, 부동산까지. 연동 계좌를 기반으로 입출금을 스마트하게 관리하는 강력한 자산 모니터링.</p>
+            </div>
+            <!-- Feature 3 -->
+            <div class="feature-card reveal">
+                <div class="icon-wrapper">
+                    <i data-feather="map"></i>
+                </div>
+                <h3>Travel Memory</h3>
+                <p>여행 모드를 활성화하면 최소한의 배터리 소모로 백그라운드 위치 경로를 그려냅니다. 당신의 모든 여정을 지도 생태계에서 확인하세요.</p>
+            </div>
+            <!-- Feature 4 -->
+            <div class="feature-card reveal">
+                <div class="icon-wrapper">
+                    <i data-feather="printer"></i>
+                </div>
+                <h3>Magazine Export</h3>
+                <p>기록된 지난 날들을 그리드 형태의 우아한 오프라인 PDF 매거진 포맷으로 추출하여 평생 보관하세요.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Updates & Changelog Section -->
+    <section class="changelog" id="updates">
+        <div class="section-header">
+            <h2>최신 릴리스 노트</h2>
+            <p>LifeMemoryLog는 사용자 피드백을 바탕으로 끊임없이 진화하고 있습니다.</p>
+        </div>
+        
+        <div class="timeline">
+            <!-- Version Item -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026. 04. 09</div>
+                <div class="timeline-content">
+                    <h3>버전 9.3 캘린더 인터랙션 고도화</h3>
+                    <ul class="changelog-list">
+                        <li><span class="tag tag-feat">New</span> 월간 달력에서 이전/다음 달 날짜 연장 표시 지원</li>
+                        <li><span class="tag tag-feat">New</span> iOS 할일 목록 드래그 앤 드롭 및 ≡ 핸들 재정렬 지원 강화</li>
+                        <li><span class="tag tag-fix">Fix</span> 주간 캘린더 진입 시 플로팅 데스크 좌표 어긋남 완벽 해결</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Version Item -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026. 02. 27</div>
+                <div class="timeline-content">
+                    <h3>버전 9.2 프리미엄 네비게이션 & 최적화</h3>
+                    <ul class="changelog-list">
+                        <li><span class="tag tag-feat">New</span> 갤러리 이미지 저장 시 용량을 최대 97% 압축하는 고효율 엔진 도입</li>
+                        <li><span class="tag tag-feat">New</span> 화면 상단 터치 시 언제든 '오늘' 날짜로 즉시 복귀하는 제스처 구현</li>
+                        <li><span class="tag tag-feat">New</span> 백그라운드 초정밀 로깅 추적 시스템 강화</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Version Item -->
+            <div class="timeline-item reveal">
+                <div class="timeline-dot"></div>
+                <div class="timeline-date">2026. 02. 25</div>
+                <div class="timeline-content">
+                    <h3>버전 9.1 시스템 안정성 및 상호작용 개편</h3>
+                    <ul class="changelog-list">
+                        <li><span class="tag tag-fix">Fix</span> 앱 잠금(Lock) 후 백그라운드 전환 시 초기 화면으로 튕기는 현상을 오버레이 렌더링으로 해결</li>
+                        <li><span class="tag tag-feat">New</span> 홈 화면 오조작을 방지하기 위한 길게 누르기(Long Press) 햅틱 피드백 편집 로직 도입</li>
+                        <li><span class="tag tag-feat">New</span> 자산 상세 내역에서 목록 간격 및 뱃지 위치 동기화 완료</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Consultation/Contact Footer -->
+    <footer id="contact" class="footer">
+        <div class="footer-cta reveal">
+            <h2>솔루션 상담 및 파트너십 문의</h2>
+            <p>이 어플리케이션에 적용된 기록, 회계 분산, AI 위치 추적 기술의 도입이 궁금하시다면 문의를 남겨주세요.</p>
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="이름 / 담당자명" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" placeholder="회신받을 이메일 주소" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" rows="4" placeholder="도입 고려 사항이나 질문을 자세히 남겨주세요." required></textarea>
+                </div>
+                <button type="submit" class="cta-submit-btn">상담 요청 보내기</button>
+            </form>
+            <div id="form-success" class="form-success hidden">
+                <i data-feather="check-circle"></i> 성공적으로 전송되었습니다. 빠른 시일 내에 회신드리겠습니다!
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="social-links">
+                <a href="#"><i data-feather="github"></i></a>
+                <a href="#"><i data-feather="twitter"></i></a>
+                <a href="#"><i data-feather="mail"></i></a>
+            </div>
+            <p>&copy; 2026 LifeMemoryLog. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Initialize feather icons locally via unpkg script above
+        feather.replace();
+    </script>
+</body>
+</html>
