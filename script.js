@@ -73,22 +73,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Contact Form Simulation
-    const contactForm = document.getElementById('contact-form');
-    const formSuccess = document.getElementById('form-success');
 
-    if(contactForm) {
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Simulate API Call
-            contactForm.querySelector('button').textContent = '전송 중...';
-            contactForm.querySelector('button').disabled = true;
-
-            setTimeout(() => {
-                contactForm.classList.add('hidden');
-                formSuccess.classList.remove('hidden');
-            }, 1000);
-        });
-    }
 
 });
