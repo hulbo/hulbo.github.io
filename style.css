@@ -1,17 +1,17 @@
 :root {
-    /* Premium HSL Palette */
-    --h: 250; /* Base Hue: Deep Violet */
-    --s: 60%;
+    /* Premium HSL Palette - Mint Edition */
+    --h: 176; /* Base Hue: Mint (#4ecdc4) */
+    --s: 56%;
     
     --bg-main: hsl(var(--h), 30%, 4%);
     --bg-secondary: hsl(var(--h), 25%, 7%);
     --bg-accent: hsl(var(--h), 40%, 12%);
     --bg-glass: hsla(var(--h), 20%, 10%, 0.7);
     
-    --primary-color: hsl(252, 78%, 63%); /* #6C5CE7 */
-    --primary-hover: hsl(252, 78%, 70%);
-    --accent-color: hsl(252, 100%, 80%);
-    --neon-glow: hsla(252, 78%, 63%, 0.4);
+    --primary-color: hsl(176, 56%, 55%); /* #4ecdc4 */
+    --primary-hover: hsl(176, 56%, 65%);
+    --accent-color: hsl(176, 80%, 80%);
+    --neon-glow: hsla(176, 56%, 55%, 0.4);
     --gold-accent: hsl(45, 100%, 60%);
     
     --text-main: hsl(var(--h), 10%, 95%);
@@ -87,15 +87,12 @@ a {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
     font-family: 'Outfit', sans-serif;
     font-size: 1.5rem;
     font-weight: 800;
     color: var(--text-main);
-}
-
-.logo-icon {
-    color: var(--primary-color);
+    text-decoration: none;
+    letter-spacing: -0.5px;
 }
 
 .nav-links {
@@ -329,20 +326,82 @@ section {
 }
 
 /* Features Group */
-.feature-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.feature-timeline {
+    max-width: 900px;
+    margin: 0 auto;
+    position: relative;
+    padding-left: 20px;
+}
+
+.feature-pillar {
+    display: flex;
     gap: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.feature-pillar:last-child {
+    margin-bottom: 0;
+}
+
+.pillar-line-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40px;
+    flex-shrink: 0;
+}
+
+.pillar-dot {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: var(--bg-secondary);
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 0 15px var(--neon-glow);
+    z-index: 2;
+    transition: var(--transition-smooth);
+}
+
+.pillar-dot svg {
+    width: 20px;
+    height: 20px;
+}
+
+.pillar-line {
+    width: 2px;
+    flex-grow: 1;
+    background: linear-gradient(to bottom, var(--primary-color), hsla(var(--h), 56%, 55%, 0.1));
+    margin-top: 10px;
+}
+
+.feature-pillar:last-child .pillar-line {
+    display: none;
+}
+
+.pillar-content {
+    flex-grow: 1;
+}
+
+.feature-pillar:hover .pillar-dot {
+    background: var(--primary-color);
+    color: #fff;
+    transform: scale(1.1);
 }
 
 .feature-card {
     background: var(--bg-glass);
-    padding: 50px 40px;
-    border-radius: 24px;
+    padding: 35px 40px;
+    border-radius: 20px;
     border: 1px solid var(--border-subtle);
     transition: var(--transition-smooth);
     position: relative;
     overflow: hidden;
+    width: 100%;
 }
 
 .feature-card::before {
@@ -358,36 +417,15 @@ section {
 }
 
 .feature-card:hover {
-    transform: translateY(-12px) scale(1.02);
     border-color: hsla(var(--h), 60%, 60%, 0.4);
-    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.6);
+    box-shadow: var(--shadow-premium);
 }
 
 .feature-card:hover::before {
     opacity: 1;
 }
 
-.icon-wrapper {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
-    background: hsla(var(--h), 60%, 60%, 0.15);
-    color: var(--primary-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 30px;
-    position: relative;
-    z-index: 1;
-    transition: var(--transition-smooth);
-}
-
-.feature-card:hover .icon-wrapper {
-    transform: rotate(10deg) scale(1.1);
-    background: var(--primary-color);
-    color: #fff;
-    box-shadow: 0 0 20px var(--neon-glow);
-}
+/* Removed icon-wrapper as icons are now in pillar-dot */
 
 .feature-card h3 {
     font-size: 1.8rem;
@@ -414,6 +452,7 @@ section {
     display: grid;
     gap: 12px;
 }
+
 
 .card-list li {
     display: flex;
@@ -698,8 +737,25 @@ section {
     .hero h1 {
         font-size: 3rem;
     }
-    .feature-grid {
-        grid-template-columns: 1fr;
+    .feature-timeline {
+        padding-left: 0;
+    }
+    .feature-pillar {
+        gap: 20px;
+    }
+    .pillar-line-group {
+        width: 30px;
+    }
+    .pillar-dot {
+        width: 30px;
+        height: 30px;
+    }
+    .pillar-dot svg {
+        width: 14px;
+        height: 14px;
+    }
+    .feature-card {
+        padding: 25px 20px;
     }
     .cta-group {
         flex-direction: column;

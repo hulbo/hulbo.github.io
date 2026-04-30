@@ -56,20 +56,6 @@ document.addEventListener('DOMContentLoaded', () => {
     window.addEventListener('scroll', revealOnScroll);
     revealOnScroll(); // Trigger once on load
 
-    // Hero Mouse Parallax Effect
-    const hero = document.querySelector('.hero');
-    const heroContent = document.querySelector('.hero-content');
-    const heroBg = document.querySelector('.hero-bg img');
-
-    if (hero) {
-        hero.addEventListener('mousemove', (e) => {
-            const x = e.clientX / window.innerWidth;
-            const y = e.clientY / window.innerHeight;
-            
-            heroContent.style.transform = `translate(${(x - 0.5) * 20}px, ${(y - 0.5) * 20}px)`;
-            heroBg.style.transform = `scale(1.1) translate(${(x - 0.5) * -30}px, ${(y - 0.5) * -30}px)`;
-        });
-    }
 
     // Smooth Scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {

@@ -12,10 +12,9 @@
 <body>
     <!-- Navbar -->
     <nav class="navbar">
-        <div class="logo">
-            <i data-feather="hexagon" class="logo-icon"></i>
+        <a href="#" class="logo">
             <span>LifeMemoryLog</span>
-        </div>
+        </a>
         <ul class="nav-links">
             <li><a href="#features">Features</a></li>
             <li><a href="#updates">Updates</a></li>
@@ -36,13 +35,13 @@
     <!-- Hero Section -->
     <section class="hero" id="home">
         <div class="hero-bg">
-            <img src="assets/hero_bg_premium.png" alt="LifeMemoryLog Hero Space">
+            <img src="assets/hero_bg_mint.png" alt="LifeMemoryLog Hero Space">
             <div class="gradient-overlay"></div>
         </div>
         <div class="hero-content">
             <div class="badge-group">
                 <span class="badge">Next Generation Logging App</span>
-                <span class="badge premium">Premium Edition</span>
+                <span class="badge premium">The Art of Recording</span>
             </div>
             <h1>기록의 <span>품격</span>을 완성하다</h1>
             <p>일상의 사소한 기억부터 치밀한 자산 관리, 그리고 특별한 여행의 발자취까지.<br>당신의 모든 순간을 프리미엄하게 저장하세요.</p>
@@ -60,69 +59,81 @@
             <h2>기록의 품격을 정의하는 4대 기둥</h2>
             <p>당신의 흩어진 데이터를 하나의 유려한 인터페이스로 통합하여 새로운 가치를 발견합니다.</p>
         </div>
-        <div class="feature-grid">
-            <!-- Feature 1: Life Logs -->
-            <div class="feature-card reveal">
-                <div class="icon-wrapper">
-                    <i data-feather="book-open"></i>
+        <div class="feature-timeline">
+            <!-- Pillar 1: Life Logs -->
+            <div class="feature-pillar reveal">
+                <div class="pillar-line-group">
+                    <div class="pillar-dot"><i data-feather="book-open"></i></div>
+                    <div class="pillar-line"></div>
                 </div>
-                <div class="card-content">
-                    <span class="card-tag">Life Logs</span>
-                    <h3>나의 하루를 하나의<br>흐름으로 관통하다</h3>
-                    <p>일상 기록, 사진, 그리고 감정을 시간순으로 병합하여 가장 자연스러운 타임라인을 제공합니다.</p>
-                    <ul class="card-list">
-                        <li><i data-feather="check"></i> 멀티모달 통합 피드</li>
-                        <li><i data-feather="check"></i> 1~n년 전 과거의 오늘</li>
-                        <li><i data-feather="check"></i> 고효율 이미지 압축</li>
-                    </ul>
-                </div>
-            </div>
-            <!-- Feature 2: Wealth -->
-            <div class="feature-card reveal">
-                <div class="icon-wrapper">
-                    <i data-feather="credit-card"></i>
-                </div>
-                <div class="card-content">
-                    <span class="card-tag">Wealth</span>
-                    <h3>체계적인 관리를 통한<br>자산의 시각화</h3>
-                    <p>단순 지출 기록을 넘어 복식부기 기반의 계좌/카드 통합 관리 및 스마트 예산 분석을 지원합니다.</p>
-                    <ul class="card-list">
-                        <li><i data-feather="check"></i> 스마트 문자 분석(Paste)</li>
-                        <li><i data-feather="check"></i> 순자산 변동 그래프</li>
-                        <li><i data-feather="check"></i> 자산 간 이체/상환 관리</li>
-                    </ul>
+                <div class="pillar-content">
+                    <div class="feature-card">
+                        <span class="card-tag">Life Logs</span>
+                        <h3>나의 하루를 하나의<br>흐름으로 관통하다</h3>
+                        <p>일상 기록, 사진, 그리고 감정을 시간순으로 병합하여 가장 자연스러운 타임라인을 제공합니다.</p>
+                        <ul class="card-list">
+                            <li><i data-feather="check"></i> 멀티모달 통합 피드</li>
+                            <li><i data-feather="check"></i> 1~n년 전 과거의 오늘</li>
+                            <li><i data-feather="check"></i> 고효율 이미지 압축</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- Feature 3: Travel -->
-            <div class="feature-card reveal">
-                <div class="icon-wrapper">
-                    <i data-feather="map"></i>
+            <!-- Pillar 2: Wealth -->
+            <div class="feature-pillar reveal">
+                <div class="pillar-line-group">
+                    <div class="pillar-dot"><i data-feather="credit-card"></i></div>
+                    <div class="pillar-line"></div>
                 </div>
-                <div class="card-content">
-                    <span class="card-tag">Travel</span>
-                    <h3>발자취가 기록이 되는<br>가장 우아한 방법</h3>
-                    <p>백그라운드 GPS 추적으로 여행 경로를 자동 생성하고, 위치 기반의 추억을 지도 위에 그려냅니다.</p>
-                    <ul class="card-list">
-                        <li><i data-feather="check"></i> 초정밀 경로 로깅</li>
-                        <li><i data-feather="check"></i> 여행 자동 결산 리포트</li>
-                        <li><i data-feather="check"></i> 위치 기반 사진 보기</li>
-                    </ul>
+                <div class="pillar-content">
+                    <div class="feature-card">
+                        <span class="card-tag">Wealth</span>
+                        <h3>체계적인 관리를 통한<br>자산의 시각화</h3>
+                        <p>단순 지출 기록을 넘어 복식부기 기반의 계좌/카드 통합 관리 및 스마트 예산 분석을 지원합니다.</p>
+                        <ul class="card-list">
+                            <li><i data-feather="check"></i> 스마트 문자 분석(Paste)</li>
+                            <li><i data-feather="check"></i> 순자산 변동 그래프</li>
+                            <li><i data-feather="check"></i> 자산 간 이체/상환 관리</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <!-- Feature 4: Goals -->
-            <div class="feature-card reveal">
-                <div class="icon-wrapper">
-                    <i data-feather="check-square"></i>
+            <!-- Pillar 3: Travel -->
+            <div class="feature-pillar reveal">
+                <div class="pillar-line-group">
+                    <div class="pillar-dot"><i data-feather="map"></i></div>
+                    <div class="pillar-line"></div>
                 </div>
-                <div class="card-content">
-                    <span class="card-tag">Goals</span>
-                    <h3>더 나은 내일을 만드는<br>일상의 작은 루틴</h3>
-                    <p>반복되는 습관과 할 일을 타임라인에 녹여내어, 당신의 성장을 수치로 증명합니다.</p>
-                    <ul class="card-list">
-                        <li><i data-feather="check"></i> 직관적인 습관 트래커</li>
-                        <li><i data-feather="check"></i> 타임라인 연동 Todo</li>
-                        <li><i data-feather="check"></i> 목표 달성률 통계</li>
-                    </ul>
+                <div class="pillar-content">
+                    <div class="feature-card">
+                        <span class="card-tag">Travel</span>
+                        <h3>발자취가 기록이 되는<br>가장 우아한 방법</h3>
+                        <p>백그라운드 GPS 추적으로 여행 경로를 자동 생성하고, 위치 기반의 추억을 지도 위에 그려냅니다.</p>
+                        <ul class="card-list">
+                            <li><i data-feather="check"></i> 초정밀 경로 로깅</li>
+                            <li><i data-feather="check"></i> 여행 자동 결산 리포트</li>
+                            <li><i data-feather="check"></i> 위치 기반 사진 보기</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!-- Pillar 4: Goals -->
+            <div class="feature-pillar reveal">
+                <div class="pillar-line-group">
+                    <div class="pillar-dot"><i data-feather="check-square"></i></div>
+                    <div class="pillar-line"></div>
+                </div>
+                <div class="pillar-content">
+                    <div class="feature-card">
+                        <span class="card-tag">Goals</span>
+                        <h3>더 나은 내일을 만드는<br>일상의 작은 루틴</h3>
+                        <p>반복되는 습관과 할 일을 타임라인에 녹여내어, 당신의 성장을 수치로 증명합니다.</p>
+                        <ul class="card-list">
+                            <li><i data-feather="check"></i> 직관적인 습관 트래커</li>
+                            <li><i data-feather="check"></i> 타임라인 연동 Todo</li>
+                            <li><i data-feather="check"></i> 목표 달성률 통계</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
