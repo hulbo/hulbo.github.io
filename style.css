@@ -380,7 +380,8 @@ section {
 }
 
 .feature-pillar:last-child .pillar-line {
-    display: none;
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
+    min-height: 80px;
 }
 
 .pillar-content {
@@ -428,7 +429,7 @@ section {
 /* Removed icon-wrapper as icons are now in pillar-dot */
 
 .feature-card h3 {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 800;
     line-height: 1.3;
     margin-bottom: 20px;
